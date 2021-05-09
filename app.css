@@ -1,0 +1,192 @@
+*,body,html{
+
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* text-shadow: 0px 0px ; */
+
+
+}
+
+body{
+  background: #0bccc3;
+  padding-bottom: 500vh
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #8bc34a;
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main header{
+  transition:all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  /*background: #1a3000;*/
+  padding: 23px 10px
+}
+main header.scrool_header{
+
+  background: #fff;
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,.3);
+}
+
+
+
+main header.scrool_header ul li ,
+main header.scrool_header #logo{
+  color: #333
+}
+
+main header #logo{
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px
+}
+
+main header a{
+  text-decoration: none;
+  padding: 2px 3px;
+  display: inline-block;
+  margin: 0 5px;
+  text-shadow: 0px 0px 0px;
+  font-weight: 600;
+}
+
+main header div{
+  display: flex;
+  align-items: center;
+}
+main header div {
+  font-size: 16px
+}
+main header div ul {
+  display: flex;
+  list-style: none
+}
+main header div ul li {
+  padding: 1px 2px;
+  margin: 0 5px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main header div div a {
+  text-decoration: none;
+  padding: .5rem .75rem;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 14px
+  border:solid .13rem;
+
+}
+
+
+main header div div a:nth-child(1){
+border: solid .13rem rgb(255 253 253 / 68%);
+
+}
+
+main header div div a:nth-child(2){
+  background: #fff;
+  color: #8bc34a
+}
+
+main header.scrool_header div div a:nth-child(1){
+    border: solid .13rem  #8bc34a;
+    color:  #8bc34a
+
+}
+
+main header.scrool_header div div a:nth-child(2){
+  background: #8bc34a;
+  color: #fff
+}
+
+
+/*____________ end header ___________*/
+
+/*____________ start hero ___________*/
+
+main #hero {
+
+
+  max-width: 400px;
+  text-align: center;
+
+
+}
+
+
+/*____________ end main ___________*/
+
+/*____________ start container ___________*/
+
+.container{
+  overflow: hidden;
+}
+
+.container section{
+  height: 100vh;
+  
+  transition:all .1s;
+}
+
+.container section:nth-child(odd){
+   background: blue
+}
+
+.container section:nth-child(even){
+   background: red
+}
+
+
+
+
+/*____________ end container ___________*/
+
+
+
+/*__________ ANIMATION ________*/
+
+.findIn{
+  opacity: 0.5  ;
+   /*transform: translateX(-50vw);*/
+ 
+
+}
+
+.findIn:nth-child(even){
+
+   transform: translateX(-50vw);
+}
+
+.findIn:nth-child(odd){
+
+   transform: translateX(50vw);
+}
+
+section.apper{
+  opacity: 1  ;
+   transform: translateX(0) !important;
+   
+}
+
